@@ -29,7 +29,7 @@ RUN (mkdir -p /etc/apache2/conf.d/ || true) \
     && tar -xf mediawiki-1.37.1.tar.gz && rm -f mediawiki-1.37.1.tar.gz \
     && ln -s mediawiki-1.37.1 mediawiki
 
-COPY LocalSettings.php /var/www/localhost/mediawiki-1.34.2/
+COPY LocalSettings.php /var/www/localhost/mediawiki-1.37.1/
 
 EXPOSE 80
 ENTRYPOINT ["httpd","-D","FOREGROUND"]
