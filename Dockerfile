@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM alpine:3.12.1
 RUN apk --no-cache --update \
     add apache2 \
     php7-apache2 \
